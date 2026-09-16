@@ -3,19 +3,109 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Layout Styles with Aside</title>
+<title>Simple Website Layout</title>
 
 <style>
+body{
+    width:900px;
+    margin:auto;
+    font-family:Verdana, sans-serif;
+    border:2px solid #444;
+}
 
-/* Write your CSS here */
+header{
+    background:#0066cc;
+    color:red;
+    text-align:center;
+    padding:15px;
+}
 
+nav{
+    background:#222;
+    padding:10px;
+    text-align:center;
+}
+
+nav a{
+    color:red;
+    text-decoration:none;
+    margin:0 15px;
+}
+
+main{
+    overflow:hidden;
+}
+
+section{
+    width:68%;
+    float:left;
+    padding:20px;
+    box-sizing:border-box;
+}
+
+aside{
+    width:30%;
+    float:right;
+    background:#e8f4ff;
+    padding:20px;
+    box-sizing:border-box;
+}
+
+footer{
+    clear:both;
+    background:#0066cc;
+    color:red;
+    text-align:center;
+    padding:10px;
+}
+
+h2{
+    color:#0066cc;
+}
 </style>
-
 </head>
 
 <body>
 
-<!-- Write your HTML code here -->
+<header>
+    <h1>My Simple Web Page</h1>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Gallery</a>
+    <a href="#">Services</a>
+    <a href="#">Contact</a>
+</nav>
+
+<main>
+
+<section>
+    <h2>Welcome</h2>
+    <p>
+        This is a simple HTML5 webpage layout using semantic elements.
+        The main section displays the primary information for visitors.
+    </p>
+
+    <p>
+        HTML5 makes web pages easy to organize, while CSS helps design
+        attractive layouts with colors, spacing, and alignment.
+    </p>
+</section>
+
+<aside>
+    <h2>Updates</h2>
+    <p>
+        Check the latest news, events, and announcements here.
+        This area can also display tips or advertisements.
+    </p>
+</aside>
+
+</main>
+
+<footer>
+    <p>&copy; 2026 VISHWA Website</p>
+</footer>
 
 </body>
 </html>
